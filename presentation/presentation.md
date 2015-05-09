@@ -3,6 +3,11 @@
 ***
 
 ## Jujhar Singh
+ ### Lead Architect, Buto.tv
+jujhar.singh@buto.tv, @jujhars13
+![me](https://raw.githubusercontent.com/jujhars13/presentation-aws-user-group-2015-05/master/presentation/rsz_jujhar.png)
+
+***
 
 - Been working in IT since the age of 16
 - Support -> DBA -> Dev -> IT manager -> developer -> DevOps
@@ -13,7 +18,7 @@
 - More PHP than I care to admit to. Mostly try to NodeJS (2 years)
 - Production workloads on AWS since 2010
 
-![me](https://dl.dropboxusercontent.com/u/12448/Jujhar.png)
+
 ***
 
 ## About Buto
@@ -22,13 +27,20 @@
 - We're like YouTube but for private businesses
 - Some big name clients: Eversheds, TRW, RFU, Tescos, Freshfields, Amec and some big name financial firms
 - Been on AWS for over 3 years, previously on Rackspace started on 1&1(Yuk!)
-- Platform is mostly PHP with new stuff in Node and bits of Python & Go
+- Platform is mostly PHP with new stuff in Node and bits of Python, Go and C#
 - Apache, HA Proxy, Redis, Mongo, MySQL, Memcache, CI(yuk!), Zend_Framework, Cilex, Express, Gearman, StatsD, Mesos and Docker
 
 ***
 
-## Buto AWS stats
+## Buto stats
 (based on March 2015)
+- \>1 million api requests per day
+- ~280k player loads per day
+- ~6k video plays per day
+
+
+## Buto AWS Usage
+
 - Monthly spend with AWS is about ~$5k production and ~$400 staging
 - Save ~$600 pm by using reserved instances
 - Save ~$1.5k pm by using autoscale and spot instances
@@ -41,15 +53,18 @@ cont...
 - Use >20TB of S3 storage
 - Use 1TB of IO optimised RDS storage over 6 MySQL instances
 - Transfer out >2TB pm from EC2 and 9.5TB pm via CloudFront
+- \>50K messages into SQS per day
 - Use a mixture of C3's and M3's, still some T1s
 - Plan to make more use of VPC and CloudFormation to be cross region
 
 
 ***
 
-## Why automate?
+## Why did we automate?
 
 - Infrastructure as code (and all its benefits)
+- Ephemeral builds, no longer attached to servers
+- More secure 
 - Dev, Staging and production are the same
 - Testing is way easier
 - Autoscaling
