@@ -99,12 +99,22 @@ echo "All install finished on `date`" >>$BUTO_LOG_SETUP
 ## Your turn
 
 - Setup Account and login
+- Generate an SSH key
 - Create your build script
 - configure security group
 - Fire up instance
 - Build deps (NodeJS)
-- Get instance to yank and serve our test web app in demo dir: [http://git.io/vU3mW](http://git.io/vU3mW)
+- Get instance to yank and serve our test web app
 
+## Hints
+
+If you get stuck build your box first and test all your commands out first, then add them to your script.
+- `yum update -y`
+- install git
+- install node
+- set `NODE_PORT` either in global env or just before you run command
+- code in demo dir: [http://git.io/vU3mW](http://git.io/vU3mW)
+- If lazy you can just use `python -m SimpleHTTPServer`
 ***
 
 ## Extras
