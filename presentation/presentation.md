@@ -37,7 +37,7 @@
 
 ***
 cont...
-- Run about 43 production boxes on avg
+- Run ~43 production servers up to 50+ during peaks
 - Use 20TB of S3 storage
 - Use 1TB of IO optimised RDS storage over 6 MySQL instances
 - Transfer out 2TB pm from EC2 and 9.5TB pm via CloudFront
@@ -64,7 +64,7 @@ cont...
 - Bundle Tasks (for Windows)
 - EC2 User data scripts (web interface/command line):
   - Simple Bash start
-  - You can then tools of your choice: Chef, Puppet, Ansible
+  - You can then use tools of your choice: Chef, Puppet, Ansible ...
 
 ***
 
@@ -93,3 +93,22 @@ curl -ksS https://server-setup.butolabs.tv/base-firewall.sh || sh 22,80,443
 curl -ksS https://server-setup.butolabs.tv/post-install.sh || sh
 echo "All install finished on `date`" >>$BUTO_LOG_SETUP
 ```
+
+***
+
+## Your turn
+
+- Setup Account and login
+- Create your build script
+- configure security group
+- Fire up instance
+- Build deps (NodeJS)
+- Get instance to yank and serve our test web app in demo dir: [http://git.io/vU3mW](http://git.io/vU3mW)
+
+***
+
+## Extras
+(if we have time)
+- use autoscaling groups for spot instance bids
+- Setup and test autoscale based on server load
+- Docker web service
