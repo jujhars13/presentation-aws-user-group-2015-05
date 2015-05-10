@@ -35,7 +35,7 @@ jujhar.singh@buto.tv, @jujhars13
 ## Buto stats
 (based on March 2015)
 - ~1 million api requests per day
-- ~280k player loads per day
+- ~280k player impressions per day
 - ~6k video plays per day
 
 *** 
@@ -54,7 +54,7 @@ cont...
 - Use >20TB of S3 storage
 - Use 1TB of IO optimised RDS storage over 6 MySQL instances
 - Transfer out \>2TB pm from EC2 and 9.5TB pm via CloudFront
-- ~40 - 50k messages in and out of SQS per day
+- ~40-50k messages in and out of SQS per day
 - Use a mixture of C3's and M3's, still some T1s
 - Plan to make more use of VPC and CloudFormation to be cross region
 
