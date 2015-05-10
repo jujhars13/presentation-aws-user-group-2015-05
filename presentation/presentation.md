@@ -25,7 +25,7 @@ jujhar.singh@buto.tv, @jujhars13
 
 - Online video platform based in Digbeth and London
 - We're like YouTube but for private businesses
-- Some big name clients: Eversheds, TRW, RFU, Tescos, Freshfields, Amec and some big name financial firms
+- Some big name : Eversheds, TRW, RFU, Tescos, Freshfields, Amec ...
 - Been on AWS for over 3 years, previously on Rackspace started on 1&1(Yuk!)
 - Platform is mostly PHP with new stuff in Node and bits of Python, Go and C#
 - Apache, HA Proxy, Redis, Mongo, MySQL, Memcache, CI(yuk!), Zend_Framework, Cilex, Express, Gearman, StatsD, Mesos and Docker
@@ -34,17 +34,18 @@ jujhar.singh@buto.tv, @jujhars13
 
 ## Buto stats
 (based on March 2015)
-- \>1 million api requests per day
+- ~1 million api requests per day
 - ~280k player loads per day
 - ~6k video plays per day
 
+*** 
 
 ## Buto AWS Usage
 
-- Monthly spend with AWS is about ~$5k production and ~$400 staging
+- Monthly spend with AWS is about ~$4.5k production and ~$400 staging
 - Save ~$600 pm by using reserved instances
 - Save ~$1.5k pm by using autoscale and spot instances
-- Use EC2, RDS, Elasticache, DynamoDB, Route53, SQS, S3 and Cloudfront
+- Use EC2, RDS, Elasticache, DynamoDB, Cloudwatch, Route53, SQS, S3 and Cloudfront
 - Plan to use Kinesis, Lambda, Redshift, Data Pipeline, Cloudsearch and EC2 Container Service
 
 ***
@@ -52,8 +53,8 @@ cont...
 - Run ~43 production servers up to 50+ during peaks
 - Use >20TB of S3 storage
 - Use 1TB of IO optimised RDS storage over 6 MySQL instances
-- Transfer out >2TB pm from EC2 and 9.5TB pm via CloudFront
-- \>50K messages into SQS per day
+- Transfer out \>2TB pm from EC2 and 9.5TB pm via CloudFront
+- ~40 - 50k messages in and out of SQS per day
 - Use a mixture of C3's and M3's, still some T1s
 - Plan to make more use of VPC and CloudFormation to be cross region
 
@@ -62,9 +63,9 @@ cont...
 
 ## Why did we automate?
 
-- Infrastructure as code (and all its benefits)
+- Infrastructure as code (versioned, recorded, testable)
 - Ephemeral builds, no longer attached to servers
-- More secure 
+- More secure
 - Dev, Staging and production are the same
 - Testing is way easier
 - Autoscaling
@@ -79,7 +80,7 @@ cont...
 - Bundle Tasks (for Windows)
 - EC2 User data scripts (web interface/command line):
   - Simple Bash start
-  - You can then use to setup tools of your choice: Chef, Puppet, Ansible ...
+  - You can then use to setup tools of your choice: Chef, Puppet, Ansible...
 
 ***
 
